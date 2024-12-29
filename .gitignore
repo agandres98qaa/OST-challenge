@@ -1,0 +1,29 @@
+node_modules/
+*.log
+
+# Env files
+.env*
+!.env.example
+
+# Cypress generated files
+cypress/videos/
+cypress/screenshots/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+
+# Editor/IDE configs
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+
+# Lock files that are not part of the build
+package-lock.json
+yarn.lock
