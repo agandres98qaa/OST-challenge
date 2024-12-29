@@ -1,5 +1,3 @@
-import TodoListPage from '../pages/TodoListPage';
-
 class AssertTodoListPage {
   checkItemIsChecked(itemName: string) {
     cy.contains('span', itemName).prev().should('be.checked');

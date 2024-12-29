@@ -1,7 +1,5 @@
 class TodoListPage {
   private itemInput = "input[placeholder='Add a new todo item here']";
-  private passwordInput = '#pass';
-  private loginButton = '#send2';
   public url = '';
 
   navigate() {

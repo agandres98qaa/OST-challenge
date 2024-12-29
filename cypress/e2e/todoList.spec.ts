@@ -51,9 +51,11 @@ describe('State Persistence test suite', () => {
     TodoListPage.enterItem(itemData.item1.name);
     AssertTodoListPage.checkItemQuantity(4);
     AssertTodoListPage.checkItemTopPosition(itemData.item1.name);
+    AssertTodoListPage.checkItemIsNotChecked(itemData.item1.name);
     TodoListPage.enterItem(itemData.item2.name);
     AssertTodoListPage.checkItemQuantity(5);
     AssertTodoListPage.checkItemTopPosition(itemData.item2.name);
+    AssertTodoListPage.checkItemIsNotChecked(itemData.item2.name);
   });
   it('Checking new items', () => {
     AssertTodoListPage.checkItemQuantity(3);
