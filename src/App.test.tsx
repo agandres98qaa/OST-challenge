@@ -1,9 +1,8 @@
 import React from 'react';
 import { render, screen, cleanup } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { getItemsData } from './itemsData';
+import { getItemsData } from './testData/itemsData';
 import App from './App';
-import { AddInput } from './components/AddInput';
 
 describe('Toggling Todo Items test suite', () => {
   beforeEach(() => {
