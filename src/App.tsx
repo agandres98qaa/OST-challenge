@@ -93,6 +93,7 @@ function App() {
       <TodoList>
         {todos.map((todo) => (
           <TodoItem
+            key={todo.id}
             {...todo}
             onChange={(checked) => handleChange(todo.id, checked)}
           />

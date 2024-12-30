@@ -7,18 +7,18 @@
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "babel-preset-react": "^6.24.1",
+    "dotenv": "^16.4.7",
+    "envalid": "^8.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "uuid": "^8.3.2",
-    "cypress": "13.16.1",
-    "dotenv": "16.4.7",
-    "envalid": "8.0.0"
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.8",
     "@jest/globals": "^29.7.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.47",
     "@types/react": "^17.0.81",
@@ -32,11 +32,6 @@
   },
   "scripts": {
     "test": "jest",
-    "dev": "vite",
-    "cy:regression": "cypress run --spec 'cypress/e2e/*.ts' --browser chrome",
-    "test:firefox-headed": "cypress run --browser firefox --headed",
-    "test:firefox-headless": "cypress run --headless  --browser firefox",
-    "test:chrome-headless": "cypress run --headless --browser chrome",
-    "test:chrome-headed": "cypress run --browser chrome --headed"
+    "dev": "vite"
   }
 }
